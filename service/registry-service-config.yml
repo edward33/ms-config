@@ -4,6 +4,10 @@ spring:
       -dev
 
 ---
+spring:
+   application:
+    name: microservicecloud-dept
+    
 server:
   port: 7001
 
