@@ -10,4 +10,4 @@ spring:
     name: hystrix-dashboard-service
     
 server:
-  port: 7001
+  port: 9001
