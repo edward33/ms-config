@@ -7,7 +7,7 @@ spring:
 spring:
    profiles: dev
    application:
-    name: hystrix-dashboard-service
+    name: monitor-server
     
 server:
   port: 8031
