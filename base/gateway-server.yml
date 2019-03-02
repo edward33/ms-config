@@ -34,5 +34,5 @@ zuul:
   prefix: /business  # 增加访问uri前缀
   routes:
     # spring.application.name
-    mydept.serviceId: breakerDashboard-service
+    mydept.serviceId: consumer-server
     mydept.path: /**
