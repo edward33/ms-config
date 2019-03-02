@@ -31,8 +31,9 @@ info:
 zuul:
 #  ignored-services: microservicecloud-dept #禁止使用spring.application.name访问
   ignored-services: "*"
-  prefix: /business  # 增加访问uri前缀
+  #prefix: /business  # 增加访问uri前缀
   routes:
     # spring.application.name
-    mydept.serviceId: consumer-server
-    mydept.path: "*"
+    web:
+      serviceId: consumer-server
+      path: /business/**
