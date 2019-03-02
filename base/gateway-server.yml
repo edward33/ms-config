@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: -dev
+  application:
+    name: gateway-server
+    
+server:
+  port: 8041
+
+eureka:
+  client:
+    service-url:
+      #单机
+      defaultZone: http://localhost:8021/eureka
+      #集群
+#      defaultZone: http://localhost:7001/eureka,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: gateway-server-8041
+    prefer-ip-address: true
+
+info:
+  app.name: abcdefg
+  company.name: xxxx
+
+
+zuul:
+#  ignored-services: microservicecloud-dept #禁止使用spring.application.name访问
+  ignored-services: "*"
+  prefix: /business  # 增加访问uri前缀
+  routes:
+    # spring.application.name
+    mydept.serviceId: breakerDashboard-service
+    mydept.path: /**
