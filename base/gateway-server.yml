@@ -35,4 +35,4 @@ zuul:
   routes:
     # spring.application.name
     mydept.serviceId: consumer-server
-    mydept.path: /demo/**
+    mydept.path: "*"
