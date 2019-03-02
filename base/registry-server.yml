@@ -10,7 +10,7 @@ spring:
     name: registry-service
     
 server:
-  port: 7001
+  port: 8021
 
 eureka:
   server:
