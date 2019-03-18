@@ -38,7 +38,7 @@ zuul:
     #  serviceId: consumer-server
     #  path: /business/**
     web1:
-      path: /user/**
+      path: /**
       url: http://localhost:9000
       #增加代理的header，防止session丢失
       #设置敏感头部信息。 Cookie/Set-Cookie
