@@ -34,11 +34,11 @@ zuul:
   #prefix: /business  # 增加访问uri前缀
   routes:
     # spring.application.name
-    service1:
-      serviceId: consumer-server
-      path: /business/**
+    #service1:
+    #  serviceId: consumer-server
+    #  path: /business/**
     web1:
-      path: /web/**
+      path: /user/**
       url: http://localhost:9000
       #增加代理的header，防止session丢失
       #设置敏感头部信息。 Cookie/Set-Cookie
