@@ -29,6 +29,10 @@ info:
 
 
 zuul:
+  #需要忽略的头部信息，不在传播到其他服务
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
+  
 #  ignored-services: microservicecloud-dept #禁止使用spring.application.name访问
   ignored-services: "*"
   #prefix: /business  # 增加访问uri前缀
