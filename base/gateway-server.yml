@@ -37,8 +37,8 @@ zuul:
     blog-manager-server:
       serviceId: BLOG-MANAGER-SERVER
       path: /blog/manager/**
-    user-server:
-      path: /users/**
+    auth-server:
+      path: /auth/**
       serviceId: AUTH-SERVER
       #url: http://localhost:9000
       #增加代理的header，防止session丢失
