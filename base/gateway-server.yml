@@ -32,6 +32,7 @@ zuul:
 #  ignored-services: microservicecloud-dept #禁止使用spring.application.name访问
   ignored-services: "*"
   #prefix: /business  # 增加访问uri前缀
+  add-host-header: true
   routes:
     # spring.application.name
     blog-manager-server:
@@ -44,4 +45,3 @@ zuul:
       #增加代理的header，防止session丢失
       #设置敏感头部信息。 Cookie/Set-Cookie
       sensitiveHeaders: Authorization
-      stripPrefix: false
