@@ -44,3 +44,4 @@ zuul:
       #增加代理的header，防止session丢失
       #设置敏感头部信息。 Cookie/Set-Cookie
       sensitiveHeaders: Authorization
+      stripPrefix: false
