@@ -35,9 +35,10 @@ zuul:
   add-host-header: true
   routes:
     # spring.application.name
-    blog-manager-server:
-      serviceId: BLOG-MANAGER-SERVER
-      path: /blog/manager/**
+    blog-server:
+      serviceId: BLOG-SERVER
+      path: /blog/**
+      sensitiveHeaders: Authorization
     auth-server:
       path: /auth/**
       serviceId: AUTH-SERVER
