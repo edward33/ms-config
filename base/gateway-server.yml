@@ -10,7 +10,7 @@ spring:
     name: gateway-server
     
 server:
-  port: 8041
+  port: 80
 
 eureka:
   client:
@@ -38,6 +38,10 @@ zuul:
     blog-server:
       serviceId: BLOG-SERVER
       path: /blog/**
+      sensitiveHeaders: Authorization
+    file-server:
+      serviceId: FILE-SERVER
+      path: /file/**
       sensitiveHeaders: Authorization
     auth-server:
       path: /auth/**
